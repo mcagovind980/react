@@ -1,0 +1,72 @@
+const books=[
+       {
+    id:1,
+    title:"Mind_to_Matter_-_Dawson_Church11",
+    image:"/public/Images/AboutMind/OIP1.jpg",
+    viewLink:"https://drive.google.com/file/d/1ITQIIgJJlH7OtJylmB_mNqKg1aP3IlOF/view?usp=drive_link"
+    }
+   ,
+    {
+    id:2,
+    title:"Master_Your_Mind",
+    image:"/public/Images/AboutMind/download.jpg",
+    viewLink:"https://drive.google.com/file/d/1nfNIz9FA_85Rt8z6OoOnLAvjnm7qydS6/view?usp=drive_link"
+    }
+   ,
+    {
+    id:3,
+    title:"Real_Life_Mindfulness_Becca",
+    image:"/public/Images/AboutMind/OIP.jpg",
+    viewLink:"https://drive.google.com/file/d/1UZRq2pa3__XO2mj0ysiSVabjZ0T43ytz/view?usp=drive_link"
+    }
+   ,
+    {
+    id:4,
+    title:"Teaching_That_Changes_Lives_12_Mindset_Tool",
+    image:"/public/Images/AboutMind/OIP2.jpg",
+    viewLink:"https://drive.google.com/file/d/1wzS8s2nV9yA44sV9rOgHaGtEYYjbjzcr/view?usp=drive_link"
+    }
+   ,
+    {
+    id:5,
+    title:" Mind control The secret weapon utilised",
+    image:"/public/Images/AboutMind/download2.jpg",
+    viewLink:"https://drive.google.com/file/d/1fFNNpg6VS8xi9OOefUR3um2ZW2C12KoF/view?usp=drive_link"
+    }
+   ,
+    {
+    id:6,
+    title:"Mindful_Steps_to_Self_Esteem_Everyday_Practices_for_Cultivating",
+    image:"/public/Images/AboutMind/OIP3.jpg",
+    viewLink:"https://drive.google.com/file/d/1PKU6ogC_pH4SVWgarCy40Vw3BIXYM-Wr/view?usp=drive_link"
+    }
+   ,
+    {
+    id:7,
+    title:"A_mind_for_numbers,_how_to_excel_at_math",
+    image:"/public/Images/AboutMind/OIP4.jpg",
+    viewLink:"https://drive.google.com/file/d/1x7t69Lq92bjgfvNjXcPCLA3LbrUpZsHj/view?usp=drive_link"
+    
+},
+    {
+    id:8,
+    title:"Battlefield of the Mind book",
+    image:"/public/Images/AboutMind/download3.jpg",
+    viewLink:"https://drive.google.com/file/d/1QHjnTxs_BrHd9anGzRJS-KxwFCB8uP8l/view?usp=drive_link"
+    }
+,
+    { 
+    id:9,
+    title:"Be Here Now_ Open Your Mind to Spirituality ",
+    image:"/public/Images/AboutMind/download4.jpg",
+    viewLink:"https://drive.google.com/file/d/1Mx1p8ye1R9cXeIQiNXMTiak0MfWCasRN/view?usp=drive_link"
+    }
+   ,
+    {
+    id:10,
+    title:"Body_Language_and_Mind_Hack_Nonverbal",
+    image:"/public/Images/AboutMind/download5.jpg",
+    viewLink:"https://drive.google.com/file/d/1uQicZ0DVtgfK2qtCw5aY3ofU9574URHe/view?usp=drive_link"
+    }
+]
+export default books

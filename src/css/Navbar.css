@@ -1,0 +1,144 @@
+
+/* =========================
+   MAIN NAVBAR CONTAINER
+========================= */
+
+.logo {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    background-color: #1f2937;
+    color: white;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   LOGO / WEBSITE NAME
+========================= */
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* =========================
+   LINKS CONTAINER
+========================= */
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   NAVLINK
+========================= */
+
+.nav-link a {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px 14px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.nav-link a:hover {
+    background-color: #374151;
+    color: #60a5fa;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   ACTIVE LINK
+========================= */
+
+.nav-link a.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .logo {
+        flex-direction: column;
+
+        padding: 15px;
+
+        gap: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-link a {
+        font-size: 14px;
+
+        padding: 8px 10px;
+    }
+
+    .nav-link {
+        gap: 5px;
+    }
+}
