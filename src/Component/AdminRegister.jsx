@@ -69,7 +69,7 @@ function AdminRegister() {
 
   return (
     <div className="container">
-    <div className="admin-register">
+    <div className="user-login">
 
       <h1>Admin Sign Up</h1>
 

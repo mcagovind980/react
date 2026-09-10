@@ -1,80 +1,887 @@
+
+
 .admin-books {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 25px;
-  font-family: Arial, sans-serif;
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 45px 35px 80px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 5% 10%,
+            rgba(239, 68, 68, 0.16),
+            transparent 23%
+        ),
+        radial-gradient(
+            circle at 95% 10%,
+            rgba(250, 204, 21, 0.18),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(6, 182, 212, 0.15),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(124, 58, 237, 0.15),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #edf6ff,
+            #ffffff 45%,
+            #fff8df
+        );
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
 }
 
-.admin-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.admin-books h1 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 auto 30px;
+
+    max-width: 1200px;
+
+    text-align: center;
+
+    font-size: 38px;
+
+    font-weight: 850;
+
+    color: #0b2a68;
+
+    letter-spacing: 0.5px;
+
+    text-shadow:
+        0 3px 5px
+        rgba(37, 99, 235, 0.18);
 }
 
-.admin-header h1 {
-  margin: 0;
+
+/* =========================================================
+   LOGOUT BUTTON
+========================================================= */
+
+.admin-books > button {
+    display: block;
+
+    margin:
+        0 auto 25px;
+
+    min-width: 130px;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ef4444,
+            #dc2626
+        );
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 0 #991b1b,
+        0 10px 18px
+        rgba(220, 38, 38, 0.25);
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
 }
 
-.logout-btn {
-  padding: 10px 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
+
+.admin-books > button:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 0 #991b1b,
+        0 15px 25px
+        rgba(220, 38, 38, 0.32);
 }
 
-.admin-form {
-  padding: 20px;
-  margin-bottom: 30px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+
+.admin-books > button:active {
+    transform:
+        translateY(3px);
+
+    box-shadow:
+        0 2px 0 #991b1b;
 }
 
-.admin-form input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+
+/* =========================================================
+   HORIZONTAL LINE
+========================================================= */
+
+.admin-books hr {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 25px auto;
+
+    border: none;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #2563eb,
+            #06b6d4,
+            #facc15,
+            #ef4444,
+            transparent
+        );
 }
 
-.admin-form button {
-  padding: 10px 18px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.admin-books > p {
+    width: fit-content;
+
+    max-width: 90%;
+
+    margin:
+        20px auto;
+
+    padding: 11px 22px;
+
+    border-radius: 12px;
+
+    color: #064e3b;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d1fae5,
+            #ecfccb
+        );
+
+    border:
+        1px solid #86efac;
+
+    box-shadow:
+        0 5px 15px
+        rgba(22, 163, 74, 0.12);
+
+    font-weight: 650;
 }
 
-.book-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+
+/* =========================================================
+   FORM CONTAINER
+========================================================= */
+
+.admin-books form {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin:
+        35px auto;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    border-radius: 24px;
+
+    border:
+        2px solid
+        rgba(255, 255, 255, 0.9);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(239, 247, 255, 0.94),
+            rgba(255, 250, 230, 0.94)
+        );
+
+    box-shadow:
+
+        0 8px 0
+        rgba(37, 99, 235, 0.12),
+
+        0 20px 45px
+        rgba(15, 23, 42, 0.12),
+
+        inset 0 2px 5px
+        rgba(255, 255, 255, 0.9);
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
+
+
+.admin-books form:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+
+        0 10px 0
+        rgba(37, 99, 235, 0.12),
+
+        0 28px 55px
+        rgba(37, 99, 235, 0.16);
+}
+
+
+/* =========================================================
+   FORM INPUTS
+========================================================= */
+
+.admin-books form input {
+
+    width: 100%;
+
+    height: 48px;
+
+    margin: 7px 0;
+
+    padding:
+        0 16px;
+
+    box-sizing: border-box;
+
+    border:
+        2px solid
+        #bfdbfe;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    color: #172033;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f0f9ff
+        );
+
+    font-size: 15px;
+
+    box-shadow:
+        inset 0 2px 5px
+        rgba(15, 23, 42, 0.06),
+
+        0 4px 10px
+        rgba(37, 99, 235, 0.07);
+
+    transform:
+        translateZ(15px);
+
+    transition:
+        border 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* Input focus */
+
+.admin-books form input:focus {
+
+    border-color:
+        #7c3aed;
+
+    transform:
+        translateZ(25px)
+        translateY(-2px);
+
+    box-shadow:
+
+        0 0 0 3px
+        rgba(124, 58, 237, 0.12),
+
+        0 8px 18px
+        rgba(124, 58, 237, 0.16);
+}
+
+
+/* Placeholder */
+
+.admin-books form input::placeholder {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   ADD / UPDATE BUTTON
+========================================================= */
+
+.admin-books form button[type="submit"] {
+
+    width: 190px;
+
+    height: 46px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #16a34a,
+            #059669,
+            #06b6d4
+        );
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 0 #047857,
+
+        0 12px 22px
+        rgba(5, 150, 105, 0.25);
+
+    transform:
+        translateZ(30px);
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.admin-books form button[type="submit"]:hover {
+
+    transform:
+        translateZ(40px)
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 0 #047857,
+
+        0 17px 28px
+        rgba(5, 150, 105, 0.32);
+}
+
+
+.admin-books form button[type="submit"]:active {
+
+    transform:
+        translateZ(20px)
+        translateY(3px);
+
+    box-shadow:
+        0 2px 0 #047857;
+}
+
+
+/* Disabled */
+
+.admin-books form button[type="submit"]:disabled {
+
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow:
+        0 3px 0 #64748b;
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+========================================================= */
+
+.admin-books form button[type="button"] {
+
+    width: 150px;
+
+    height: 43px;
+
+    margin-top: 12px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #64748b,
+            #475569
+        );
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 0 #334155,
+
+        0 9px 16px
+        rgba(71, 85, 105, 0.22);
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.admin-books form button[type="button"]:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 7px 0 #334155,
+
+        0 14px 22px
+        rgba(71, 85, 105, 0.28);
+}
+
+
+/* =========================================================
+   ALL BOOKS HEADING
+========================================================= */
+
+.admin-books h2 {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1250px;
+
+    margin:
+        35px auto 25px;
+
+    text-align: center;
+
+    color: #172554;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   NO BOOKS
+========================================================= */
+
+.admin-books > p:last-child {
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   BOOK LIST
+========================================================= */
 
 .admin-book-card {
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    min-height: 175px;
+
+    margin:
+        20px auto;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns:
+        120px 1fr auto auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    border-radius: 20px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.9);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f1f7ff,
+            #fffdf0
+        );
+
+    box-shadow:
+
+        0 6px 0
+        rgba(37, 99, 235, 0.08),
+
+        0 15px 30px
+        rgba(15, 23, 42, 0.10);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
+
+
+/* Card hover */
+
+.admin-book-card:hover {
+
+    transform:
+        translateY(-7px)
+        rotateX(1deg);
+
+    box-shadow:
+
+        0 9px 0
+        rgba(37, 99, 235, 0.10),
+
+        0 25px 45px
+        rgba(37, 99, 235, 0.16);
+}
+
+
+/* =========================================================
+   BOOK IMAGE
+========================================================= */
 
 .admin-book-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 6px;
+
+    width: 120px;
+
+    height: 145px;
+
+    padding: 7px;
+
+    box-sizing: border-box;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8fbff,
+            #e7f0ff,
+            #fff9df
+        );
+
+    border:
+        1px solid
+        #dbeafe;
+
+    box-shadow:
+
+        5px 7px 0
+        rgba(37, 99, 235, 0.07),
+
+        0 8px 15px
+        rgba(15, 23, 42, 0.12);
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease;
 }
+
+
+/* Image 3D */
+
+.admin-book-card:hover img {
+
+    transform:
+        translateY(-8px)
+        translateZ(30px)
+        rotateY(-5deg)
+        scale(1.04);
+
+    filter:
+        drop-shadow(
+            8px 12px 5px
+            rgba(15, 23, 42, 0.18)
+        );
+}
+
+
+/* =========================================================
+   BOOK TITLE
+========================================================= */
 
 .admin-book-card h3 {
-  font-size: 17px;
-  min-height: 45px;
+
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+    font-weight: 750;
+
+    word-break: break-word;
 }
 
+
+/* =========================================================
+   EDIT BUTTON
+========================================================= */
+
 .admin-book-card button {
-  padding: 8px 14px;
-  margin-right: 8px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+    min-width: 90px;
+
+    height: 42px;
+
+    padding:
+        0 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+/* First button = Edit */
+
+.admin-book-card button:first-of-type {
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #4f46e5
+        );
+
+    box-shadow:
+        0 5px 0 #3730a3,
+
+        0 9px 16px
+        rgba(124, 58, 237, 0.25);
+}
+
+
+.admin-book-card button:first-of-type:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 7px 0 #3730a3,
+
+        0 14px 22px
+        rgba(124, 58, 237, 0.32);
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+========================================================= */
+
+.admin-book-card button:last-of-type {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ef4444,
+            #dc2626
+        );
+
+    box-shadow:
+        0 5px 0 #991b1b,
+
+        0 9px 16px
+        rgba(220, 38, 38, 0.25);
+}
+
+
+.admin-book-card button:last-of-type:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 7px 0 #991b1b,
+
+        0 14px 22px
+        rgba(220, 38, 38, 0.32);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .admin-books {
+        padding:
+            35px 18px 60px;
+    }
+
+    .admin-books h1 {
+        font-size: 30px;
+    }
+
+    .admin-book-card {
+
+        grid-template-columns:
+            100px 1fr;
+
+        gap: 18px;
+    }
+
+    .admin-book-card img {
+
+        width: 100px;
+        height: 125px;
+    }
+
+    .admin-book-card h3 {
+        font-size: 16px;
+    }
+
+    .admin-book-card button {
+
+        grid-column: auto;
+
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .admin-books {
+        padding:
+            25px 12px 50px;
+    }
+
+    .admin-books h1 {
+        font-size: 26px;
+    }
+
+    .admin-books form {
+        padding: 22px 17px;
+    }
+
+    .admin-book-card {
+
+        display: flex;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+    .admin-book-card img {
+
+        width: 140px;
+        height: 170px;
+    }
+
+    .admin-book-card h3 {
+        width: 100%;
+    }
+
+    .admin-book-card button {
+        width: 100%;
+    }
 }

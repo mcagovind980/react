@@ -99,7 +99,7 @@
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../css/Login.css"
 function AdminLogin() {
 
   const [formData, setFormData] = useState({
@@ -158,7 +158,9 @@ function AdminLogin() {
   };
 
   return (
-    <div className="admin-login">
+    <div className="container">
+    <div className="user-login">
+
 
       <h1>Admin Login</h1>
 
@@ -208,6 +210,8 @@ function AdminLogin() {
       </button>
 
     </div>
+ </div>
+ 
   );
 }
 

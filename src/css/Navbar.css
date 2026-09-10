@@ -1,144 +1,359 @@
+/* =========================================
+   NAVBAR
+========================================= */
 
-/* =========================
-   MAIN NAVBAR CONTAINER
-========================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 
-.logo {
     width: 100%;
-    min-height: 70px;
+
+    min-height: 72px;
+
+    padding: 0 35px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 30px;
-    box-sizing: border-box;
+    background:
+        linear-gradient(
+            135deg,
+            #071a3d,
+            #0b3b82 45%,
+            #123c91
+        );
 
-    background-color: #1f2937;
-    color: white;
+    box-shadow:
+        0 6px 0 rgba(4, 25, 65, 0.35),
+        0 12px 30px rgba(0, 0, 0, 0.20);
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    border-bottom:
+        2px solid rgba(255, 255, 255, 0.15);
 }
 
 
-/* =========================
-   LOGO / WEBSITE NAME
-========================= */
+/* =========================================
+   LOGO
+========================================= */
 
 .logo {
-    font-size: 25px;
-    font-weight: bold;
+    color: white;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    text-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.35);
 }
 
 
-/* =========================
-   NAVIGATION
-========================= */
+/* =========================================
+   NAV LINKS
+========================================= */
 
-.navbar {
+.nav-links {
     display: flex;
+
     align-items: center;
 
-}
-
-
-/* =========================
-   LINKS CONTAINER
-========================= */
-
-.nav-link {
-    display: flex;
-    align-items: center;
     gap: 8px;
-
-    flex-wrap: wrap;
 }
 
 
-/* =========================
-   NAVLINK
-========================= */
+.nav-links > a,
+.dropdown-btn {
+    border: none;
 
-.nav-link a {
-    text-decoration: none;
+    padding: 11px 14px;
 
     color: white;
 
-    padding: 10px 14px;
+    background: transparent;
 
-    border-radius: 6px;
+    text-decoration: none;
 
     font-size: 15px;
 
-    transition: all 0.3s ease;
+    font-weight: 650;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        color 0.25s ease;
 }
 
 
-/* =========================
-   HOVER
-========================= */
+.nav-links > a:hover,
+.dropdown-btn:hover {
+    background:
+        rgba(255, 255, 255, 0.14);
 
-.nav-link a:hover {
-    background-color: #374151;
-    color: #60a5fa;
+    color: #fff44f;
 
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 }
 
 
-/* =========================
-   ACTIVE LINK
-========================= */
+/* Active link */
 
-.nav-link a.active {
-    background-color: #2563eb;
+.nav-links > a.active {
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #06b6d4
+        );
+
+    box-shadow:
+        0 4px 10px
+        rgba(6, 182, 212, 0.30);
+}
+
+
+/* =========================================
+   DROPDOWN
+========================================= */
+
+.nav-dropdown {
+    position: relative;
+}
+
+
+/* Button */
+
+.dropdown-btn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* Arrow */
+
+.dropdown-btn span {
+    font-size: 10px;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+/* Rotate arrow */
+
+.nav-dropdown:hover .dropdown-btn span {
+    transform:
+        rotate(180deg);
+}
+
+
+/* =========================================
+   DROPDOWN MENU
+========================================= */
+
+.dropdown-menu {
+    position: absolute;
+
+    top: calc(100% + 12px);
+
+    right: 0;
+
+    min-width: 210px;
+
+    padding: 9px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255, 255, 255, 0.97);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 10px 20px
+        rgba(15, 23, 42, 0.15),
+
+        0 25px 45px
+        rgba(37, 99, 235, 0.18);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(-10px)
+        scale(0.96);
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* Show dropdown */
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================
+   DROPDOWN LINKS
+========================================= */
+
+.dropdown-menu a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    padding: 12px 13px;
+
+    color: #172033;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 650;
+
+    border-radius: 10px;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.dropdown-menu a:hover {
+    color: #2563eb;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef6ff,
+            #f3f0ff
+        );
+
+    transform:
+        translateX(4px);
+}
+
+
+/* Active dropdown link */
+
+.dropdown-menu a.active {
     color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
 }
 
 
-/* =========================
+/* =========================================
+   SIGN UP BUTTON
+========================================= */
+
+.signup-btn {
+    background:
+        linear-gradient(
+            135deg,
+            #f59e0b,
+            #ef4444
+        );
+
+    box-shadow:
+        0 4px 0 #b91c1c,
+        0 7px 15px
+        rgba(239, 68, 68, 0.25);
+}
+
+
+.signup-btn:hover {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #facc15,
+            #ef4444
+        );
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================
    MOBILE
-========================= */
+========================================= */
 
 @media (max-width: 900px) {
 
-    .logo {
+    .navbar {
+        padding: 12px 18px;
+
         flex-direction: column;
 
-        padding: 15px;
-
-        gap: 15px;
+        gap: 12px;
     }
 
-    .navbar {
+    .nav-links {
         width: 100%;
 
         justify-content: center;
-    }
 
-    .nav-link {
-        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     .logo {
-        font-size: 22px;
+        font-size: 21px;
     }
 
-    .nav-link a {
-        font-size: 14px;
-
-        padding: 8px 10px;
-    }
-
-    .nav-link {
+    .nav-links {
         gap: 5px;
+    }
+
+    .nav-links > a,
+    .dropdown-btn {
+        padding: 9px 10px;
+
+        font-size: 13px;
+    }
+
+    .dropdown-menu {
+        right: 0;
+
+        min-width: 190px;
     }
 }
