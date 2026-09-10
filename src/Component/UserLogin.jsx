@@ -121,6 +121,9 @@ function UserLogin() {
         <button type="submit">
           Login
         </button>
+        <button type="submit" onClick={() => navigate("/register")} >
+          Sign Up
+        </button>
 
       </form>
 

@@ -16,10 +16,10 @@ body {
         linear-gradient(
             135deg,
             #89b2ff 0%,
-            #707c8e 25%,
+            #a4b6d0 25%,
             #ffffff 52%,
-            #f28500 72%,
-            #000000 100%
+            #c1a27c 72%,
+            #434040 100%
         );
 
     background-attachment: fixed;
@@ -221,10 +221,10 @@ body {
     ),
     linear-gradient(
         135deg,
-        #00a878 0%,
-        #00e6a0 20%,
-        #ff7d7d 45%,
-        #fff51c 60%,
+        #abf6e1 0%,
+        #fbc9ff 20%,
+        #ced2c8 45%,
+        #fff86a 60%,
         #ffe98f 78%,
         #d2ff71 100%
     );
@@ -378,14 +378,17 @@ box-shadow:
     background:
         linear-gradient(
             145deg,
-            #8affbb,
-            #fcff57,
-            #72deff
+             yellow
+           ,
+            #a7b16dc7,
+            #7fbca8,
+            #72deff,
+            red
         );
 
     border: 1px solid
         rgba(37, 99, 235, 0.12);
-
+border-radius: 30px;
     box-shadow:
 
         inset 0 0 20px
@@ -410,7 +413,6 @@ box-shadow:
         transform 0.45s ease,
         filter 0.45s ease;
 }
-
 
 /* =========================================================
    BOOK IMAGE HOVER

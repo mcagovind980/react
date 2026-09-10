@@ -21,7 +21,8 @@ function Home()
               View PDF
             </a>
           </div>
-        ))}
+        ))
+        }
       </div>
       </div>
   );
