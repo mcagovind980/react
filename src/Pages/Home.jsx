@@ -1,8 +1,9 @@
 import books from "../Data/Home1"
 import "../css/App.css";
-
+import Loader from "../Component/Loader";
 function Brain()
  {
+    
     return(
 <div className="container">
     <div className="card">
@@ -16,6 +17,7 @@ function Brain()
 </a>
     </div>
 )) }
+<Loader/>
     </div>
 </div>
 

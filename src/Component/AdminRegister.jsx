@@ -118,7 +118,7 @@ function AdminRegister() {
       <br />
 
       <button onClick={() => navigate("/admin/login")}>
-        Already have an account? Login
+       Login
       </button>
 
     </div>
