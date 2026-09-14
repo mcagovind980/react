@@ -19,29 +19,35 @@
     background:
         radial-gradient(
             circle at 10% 20%,
-            rgba(255, 70, 70, 0.35),
+            rgba(245, 114, 114, 0.76),
             transparent 25%
         ),
         radial-gradient(
-            circle at 90% 20%,
-            rgba(255, 220, 0, 0.35),
+            circle at 90% 30%,
+            rgba(255, 221, 0, 0.722),
             transparent 25%
         ),
         radial-gradient(
-            circle at 20% 90%,
-            rgba(0, 220, 180, 0.30),
+            circle at 20% 90% ,
+            #02ff1bf1,
             transparent 25%
         ),
         radial-gradient(
-            circle at 90% 90%,
+            circle at 45% 90%,
             rgba(120, 70, 255, 0.30),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 50% 80%,
+            rgb(227, 244, 2),
             transparent 25%
         ),
         linear-gradient(
             135deg,
-            #e8f5ff,
-            #ffffff 45%,
-            #fff8df
+            #0091ff,
+            #0277f4 45%,
+            #d605f7 ,
+            transparent  65%
         );
 
     overflow: hidden;
@@ -374,3 +380,5 @@
     }
 
 }
+
+

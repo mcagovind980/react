@@ -1,6 +1,11 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import  "../css/Login.css";
+import "../css/Login.css";
+import "../css/Lo.css";
+
+import Home from "../Pages/Home";
+
 function UserLogin() {
   const [formData, setFormData] = useState({
     email: "",
@@ -77,57 +82,70 @@ function UserLogin() {
   };
 
   return (
-    <div className="container">
-    <div className="user-login">
+    <div className="login-page">
 
-      <h1>User Login</h1>
+      {/* HOME BACKGROUND */}
+      <div className="home-background">
+        <Home />
+      </div>
 
-      <form onSubmit={handleSubmit}>
+      {/* DARK TRANSPARENT OVERLAY */}
+      <div className="login-overlay">
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+        {/* LOGIN CARD */}
+        <div className="user-login">
 
-        <br />
+          <h1>User Login</h1>
 
-        <input
-          type="password"
-          name="password"
-          placeholder="Enter Password"
-          value={formData.password}
-          onChange={handleChange}
-          required
-        />
+          <form onSubmit={handleSubmit}>
 
-        <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
 
-        {error && (
-          <p style={{ color: "red" }}>
-            {error}
-          </p>
-        )}
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
 
-        {message && (
-          <p style={{ color: "green" }}>
-            {message}
-          </p>
-        )}
+            {error && (
+              <p style={{ color: "red" }}>
+                {error}
+              </p>
+            )}
 
-        <button type="submit">
-          Login
-        </button>
-        <button type="submit" onClick={() => navigate("/register")} >
-          Sign Up
-        </button>
+            {message && (
+              <p style={{ color: "green" }}>
+                {message}
+              </p>
+            )}
 
-      </form>
+            <button type="submit">
+              Login
+            </button>
 
-    </div>
+            <button
+              type="button"
+              onClick={() => navigate("/register")}
+            >
+              Sign Up
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
     </div>
   );
 }

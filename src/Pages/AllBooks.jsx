@@ -39,6 +39,7 @@ function AllBooks() {
   };
 
   return (
+    
     <div className="all-books-page">
 
       <div className="all-books-wrapper">

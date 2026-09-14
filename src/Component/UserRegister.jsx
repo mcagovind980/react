@@ -74,7 +74,8 @@ function UserRegister() {
   };
 
   return (
-    <div className="container">
+    <div className="login-page">
+      <div className="login-overlay">
 
     <div className="user-login">
 
@@ -133,6 +134,7 @@ function UserRegister() {
 
       </form>
 
+    </div>
     </div>
     </div>
   );

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/Login.css"
+// import "../css/Login.css"
 function AdminLogin() {
 
   const [formData, setFormData] = useState({
@@ -56,12 +56,14 @@ function AdminLogin() {
 
       console.log("Login Error:", error);
 
-      setError("Server se connection nahi ho raha");
+      setError("server is not able to connect");
     }
   };
 
   return (
     <div className="container">
+      <div className="login-overlay">
+
     <div className="user-login">
 
 
@@ -113,6 +115,7 @@ function AdminLogin() {
       </button>
 
     </div>
+ </div>
  </div>
  
   );

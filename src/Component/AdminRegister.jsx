@@ -69,6 +69,8 @@ function AdminRegister() {
 
   return (
     <div className="container">
+      <div className="login-overlay">
+
     <div className="user-login">
 
       <h1>Admin Sign Up</h1>
@@ -121,6 +123,7 @@ function AdminRegister() {
        Login
       </button>
 
+    </div>
     </div>
     </div>
   );
