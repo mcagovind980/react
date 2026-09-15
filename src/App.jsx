@@ -22,6 +22,9 @@ import Motivation from "./Pages/Motivation";
 import Psychology from "./Pages/Psychology";
 import AboutMind from "./Pages/AboutMind";
 import AuthLayout from "./Component/AuthLayout";
+import Footer from "./Component/Footer";
+import Contact from "./Pages/Contact";
+import PopularBooks from"./Pages/PopularBooks";
 
 // Authentication
 import UserRegister from "./Component/UserRegister";
@@ -45,8 +48,12 @@ function App() {
 
       <Routes>
 
+
+
+
         {/* HOME - PUBLIC */}
-        
+
+
 <Route
   path="/admin/login"
   element={
@@ -121,6 +128,7 @@ function App() {
       }
         />
 
+
         <Route
           path="/Alone"
           element={
@@ -129,7 +137,34 @@ function App() {
             </ProtectedUserRoute>
           }
         />
+<Route
+path="/Footer"
+element={
+<ProtectedUserRoute>
+<Footer/>
+</ProtectedUserRoute>
 
+}
+
+/>
+
+<Route 
+path="/Contact"
+element ={
+<ProtectedUserRoute>
+<Contact/>
+</ProtectedUserRoute>
+
+}
+/>
+<Route
+path="/PopularBooks"
+element={
+<ProtectedUserRoute>
+  <PopularBooks />
+</ProtectedUserRoute >
+}
+/>
         <Route
           path="/About"
           element={

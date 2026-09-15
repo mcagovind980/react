@@ -11,7 +11,6 @@ body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
     color: #172033;
-
     background:
         linear-gradient(
             135deg,
@@ -23,9 +22,8 @@ body {
         );
 
     background-attachment: fixed;
+
 }
-
-
 /* =========================================================
    MAIN 3D BACKGROUND
    ========================================================= */
@@ -72,7 +70,9 @@ body {
             #fff8e5 75%,
             #fff0f0
         );
-}
+box-shadow: 0px 23px 33px rgb(240, 153, 153);
+
+    }
 
 
 /* =========================================================
@@ -879,4 +879,75 @@ border-radius: 30px;
 }
 
 
+.Footer{
+    width:100%;
+    border: 3px solid black;
+   background:
+   radial-gradient(
+    circle at 20% 40%,
+    rgb(247, 215, 109) 0%,
+    rgb(164, 222, 164) 40%,
+    rgb(206, 206, 161) 70%,
+    transparent 90%
+   ),
+   radial-gradient(
+    circle at 60% 100%,
+    rgb(25, 164, 37) 0%,
+    rgb(210, 223, 30) 40%,
+    rgb(184, 130, 215) 70%,
+    transparent 90%
+   ),
+   white;
 
+  } 
+  .Footer>.contant{
+  display:grid;
+  grid-template-columns: repeat(4,3fr);
+  /* grid-template-rows: repeat(400px,4fr); */
+  justify-content: center;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 600;
+   padding:20px;                  
+   }
+  .Footer .contant .about{
+   border:  0px solid;
+   height:100%;
+   box-shadow: 0 0px 22px rgb(124, 238, 124),0 0px 34px rgb(89, 97, 214);
+   }
+
+   .Contact{
+    display: flex;
+    justify-content: center;
+    border: 0px solid black;
+    width: 30%;    
+    height:50%;
+ position: absolute;
+ left:500px;
+ top:250px;
+ background:linear-gradient(138deg,rgb(226, 157, 157),rgb(106, 250, 106),rgb(244, 244, 169),white);
+ box-shadow: 0px 5px 34px rgb(15, 85, 205),0px 6px 40px rgb(254, 254, 82);
+ font-size: 20px;
+ font-weight: 600;  
+ transition:transform 1s ease;
+ }
+.Contact>.card{
+    text-align: center;
+    word-spacing: 2px;
+    display: inline;
+}
+
+.Contact:hover{
+transform:scale(1.04) ;
+
+}
+ .about>h3{
+ color:blue;
+ text-shadow: 6px 4px 14px rgb(49, 0, 62);
+ }
+ .about>a{
+ text-decoration: none;
+ color:rgb(68, 0, 255);
+ text-shadow: 6px 4px 14px rgb(255, 0, 0);
+
+}

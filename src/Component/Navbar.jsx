@@ -21,7 +21,7 @@ function Navbar() {
           All Books
         </NavLink>
 
-        <NavLink to="/Popular_Books">
+        <NavLink to="/PopularBooks">
           Popular Books
         </NavLink>
 

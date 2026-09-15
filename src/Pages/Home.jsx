@@ -1,11 +1,13 @@
 import books from "../Data/Home1"
 import "../css/App.css";
 import Loader from "../Component/Loader";
+import Footer from "../Component/Footer";
+
 function Brain()
  {
     
     return(
-<div className="container">
+        <><div className="container">
     <div className="card">
 { books.map((book)=>(
     <div className="item" key={book.id}>
@@ -17,10 +19,13 @@ function Brain()
 </a>
     </div>
 )) }
-<Loader/>
-    </div>
 </div>
+</div>
+<Loader/>
+<Footer/>
 
-    )
+</>
+
+)
 }
 export default Brain

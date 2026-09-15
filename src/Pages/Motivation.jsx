@@ -15,8 +15,6 @@ function Motivation()
  ))}
     </div>
     </div>
-
-
     )
 }
 export default Motivation

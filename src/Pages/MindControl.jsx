@@ -11,7 +11,6 @@ function Mind()
 <a href={book.viewLink} target="_blank">
 view Pdf
 </a>
-
 </div>
 
 
