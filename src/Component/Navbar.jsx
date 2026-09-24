@@ -7,7 +7,7 @@ function Navbar() {
 
       {/* Logo */}
       <div className="logo">
-        📚 My eBook
+        Motivational Ebook 
       </div>
 
       {/* Navigation */}

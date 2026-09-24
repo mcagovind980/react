@@ -14,6 +14,7 @@ function Brain()
 <img src={book.image} alt={book.title}>
 </img>
 <h3>{book.title}</h3>
+
 <a href={book.path} >
     View Pdf
 </a>

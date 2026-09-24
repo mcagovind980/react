@@ -1,15 +1,20 @@
-import "../css/App.css"
+import "../css/Loader.css"
 function Loader() {
   return (
-    <div className="loader-container">
+    <div className="book-loader">
 
-      <div className="loader"></div>
+      <div className="skeleton-title"></div>
+      <div className="skeleton-title1"></div>
 
-      <p>Loading...</p>
+      <div className="skeleton-grid">
+        <div className="book-skeleton"></div>
+        <div className="book-skeleton"></div>
+        <div className="book-skeleton"></div>
+        <div className="book-skeleton"></div>
+      </div>
 
     </div>
   );
 }
 
 export default Loader;
-

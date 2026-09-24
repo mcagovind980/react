@@ -1,0 +1,48 @@
+.book-loader {
+  padding: 30px;
+}
+
+.skeleton-title {
+  width: 250px;
+  height: 30px;
+  border-radius: 8px;
+  background: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.skeleton-title1 {
+  width: 550px;
+  height: 30px;
+  border-radius: 8px;
+  background: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.book-skeleton {
+  height: 280px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    #e0dfdf 25%,
+    #f5f3f3 50%,
+    #ffffff 75%
+  );
+  background-size: 200% 100%;
+  animation: ani 1.5s infinite;
+}
+
+@keyframes ani {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}

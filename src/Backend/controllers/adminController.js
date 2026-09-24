@@ -26,8 +26,7 @@ const registerAdmin = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const admin = await Admin.create({
-      username,
-      password: hashedPassword
+      username,password: hashedPassword
     });
 
     res.status(201).json({

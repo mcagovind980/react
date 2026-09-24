@@ -1,12 +1,13 @@
 
-import React from "react";
+import {Suspense,lazy} from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./Component/Navbar";
+import Loader from "./Component/Loader"
 
 // User pages
-import Home from "./Pages/Home";
-import AllBooks from "./Pages/AllBooks";
+const  Home=lazy(()=>import ("./Pages/Home"));
+const AllBooks=lazy(()=>import ( "./Pages/AllBooks"));
 import Alone from "./Pages/Alone";
 import About from "./Pages/About";
 import Baiography from "./Pages/Baiography";
@@ -46,6 +47,7 @@ function App() {
     <>
       <Navbar />
 
+<Suspense fallback={<Loader/>}>
       <Routes>
 
 
@@ -295,6 +297,7 @@ element={
         />
 
       </Routes>
+      </Suspense>
     </>
   );
 }
