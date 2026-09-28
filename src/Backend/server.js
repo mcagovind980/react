@@ -254,7 +254,7 @@ connectDB();
 app.use(
   cors({
     origin: ["https://react-tbhc.onrender.com",
-     "https://YOUR-NETLIFY-SITE.netlify.app"],
+     "https://ebookwebclonereact.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
   })
