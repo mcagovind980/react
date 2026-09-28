@@ -8,7 +8,7 @@ function Home() {
     const [books, setBooks] = useState([]);
 
 useEffect(() => {
-  fetch("http://localhost:5000/api/books")
+  fetch("https://react-tbhc.onrender.com/api/books")
     .then((response) => response.json())
     .then((data) => {
       console.log("API DATA:", data);

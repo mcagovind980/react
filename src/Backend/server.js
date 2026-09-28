@@ -253,7 +253,8 @@ connectDB();
 
 app.use(
   cors({
-    origin: "http://localhost:5175",
+    origin: ["https://react-tbhc.onrender.com",
+     "https://YOUR-NETLIFY-SITE.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
   })

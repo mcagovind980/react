@@ -31,7 +31,7 @@ function UserRegister() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/users/register",
+        "https://react-tbhc.onrender.com/api/users/register",
         {
           method: "POST",
 

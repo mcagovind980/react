@@ -29,7 +29,7 @@ function AdminRegister() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/register",
+        "https://react-tbhc.onrender.com/api/admin/register",
         {
           method: "POST",
 
