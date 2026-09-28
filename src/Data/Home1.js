@@ -4,7 +4,7 @@ const books=[
     {
 id:1,
 title:"Alone",
-image:"/public/Images/Home/download1.jpg",
+image:"/Images/AboutMind/download.jpg",
 path:"/Alone"
     }
     ,
