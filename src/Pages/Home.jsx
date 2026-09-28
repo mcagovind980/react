@@ -1,31 +1,30 @@
-import { Link } from "react-router-dom";
-import books from "../Data/Home1"
-import "../css/App.css";
-import Loader from "../Component/Loader";
-import Footer from "../Component/Footer";
+ import { Link } from "react-router-dom";
+ import books from "../Data/Home1"
+ import "../css/App.css";
+ import Loader from "../Component/Loader";
+ import Footer from "../Component/Footer";
 
-function Brain()
- {
+  function Brain()
+  {
     
     return(
         <><div className="container">
     <div className="card">
-{ books.map((book)=>(
+  { books.map((book)=>(
     <div className="item" key={book.id}>
-<img src={book.image} alt={book.title}>
-</img>
-<h3>{book.title}</h3>
+  <img src={book.image} alt={book.title}>
+  </img>
+  <h3>{book.title}</h3>
 
-<Link to={`/${book.path}`}>
-  View Pdf
-</Link>
+   <Link to={`/${book.path}`}>
+   View Pdf
+   </Link>
     </div>
-)) }
+     )) }
 </div>
 </div>
 <Loader/>
 <Footer/>
-
 </>
 
 )

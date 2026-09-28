@@ -8,17 +8,17 @@ function Brain()
     <div className="card">
 { books.map((book)=>(
     <div className="item" key={book.id}>
-<img src={book.image} alt={book.title}>
-</img>
-<h3>{book.title}</h3>
-<a href={book.viewLink} target="_blank">
+ <img src={book.image} alt={book.title}>
+ </img>
+ <h3>{book.title}</h3>
+  <a href={book.viewLink} target="_blank">
     View Pdf
-</a>
+  </a>
     </div>
-)) }
+  )) }
     </div>
-</div>
+  </div>
 
     )
-}
+  }
 export default Brain

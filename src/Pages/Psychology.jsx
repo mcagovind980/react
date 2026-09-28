@@ -10,7 +10,7 @@ function psychology()
             <img src={book.image} alt={book.title}/>
             <h3>{book.title}</h3>
              <a href={book.viewLink} target="_blank" >
-                view Pdf
+               view Pdf
              </a>
              </div> 
             ))}

@@ -32,66 +32,63 @@ import UserRegister from "./Component/UserRegister";
 import UserLogin from "./Component/UserLogin";
 
 // Admin
-import AdminBooks from "./Component/AdminBooks";
-import AdminRegister from "./Component/AdminRegister";
-import AdminLogin from "./Component/AdminLogin";
+ import AdminBooks from "./Component/AdminBooks";
+ import AdminRegister from "./Component/AdminRegister";
+ import AdminLogin from "./Component/AdminLogin";
 
 // Protection
 
-import {
+ import {
   ProtectedRoute,
   ProtectedUserRoute
-} from "./ProtectedRoute";
+ } from "./ProtectedRoute";
 
 
 
-function App() {
-  return (
+   function App() {
+    return (
     <>
-      <Navbar />
+     <Navbar />
 
-<Suspense fallback={<Loader/>}>
+     <Suspense fallback={<Loader/>}>
       <Routes>
-
-
-
-
         {/* HOME - PUBLIC */}
-
-
-<Route
-  path="/admin/login"
-  element={
-    <AuthLayout>
+   <Route
+    path="/admin/login"
+    element={
+     <AuthLayout>
       <AdminLogin />
-    </AuthLayout>
-  }
-/>
+     </AuthLayout>
+    }
+    />
         
-<Route
-  path="/admin/register"
-  element={
+   <Route
+    path="/admin/register"
+    element={
     <AuthLayout>
       <AdminRegister />
     </AuthLayout>
-  }
-/>
+    }
+   />
         
-<Route
-  path="/register"
-  element={
+    <Route
+    path="/register"
+    element={
     <AuthLayout>
       <UserRegister/>
     </AuthLayout>
   }
-/>
+  />
         {/* USER LOGIN - PUBLIC */}
         <Route
           path="/login"
           element={<UserLogin />}
         />
 
+
+
         {/* USER REGISTER - PUBLIC */}
+
         <Route
           path="/register"
           element={<UserRegister />}
@@ -106,6 +103,7 @@ function App() {
         />
 
         {/* ADMIN LOGIN - PUBLIC */}
+  
         <Route
           path="/admin/login"
           element={<AdminLogin />}
@@ -114,7 +112,7 @@ function App() {
 
         {/* PROTECTED USER PAGES */}
 
-        <Route
+          <Route
           path="/AllBooks"
           element={
             <ProtectedUserRoute>
@@ -123,6 +121,7 @@ function App() {
           }
         />
 
+
         <Route
           path="/"
           element={
@@ -130,44 +129,44 @@ function App() {
               <Home />
             </ProtectedUserRoute>
      
-      }
+    }
         />
 
 
         <Route
           path="/Alone"
           element={
-            <ProtectedUserRoute>
-              <Alone />
-            </ProtectedUserRoute>
-          }
+        <ProtectedUserRoute>
+        <Alone />
+        </ProtectedUserRoute>
+        }
         />
-<Route
-path="/Footer"
-element={
-<ProtectedUserRoute>
-<Footer/>
-</ProtectedUserRoute>
+  <Route
+  path="/Footer"
+  element={
+ <ProtectedUserRoute>
+ <Footer/>
+ </ProtectedUserRoute>
 
-}
+ }
 
-/>
+ />
 
-<Route 
-path="/Contact"
-element ={
-<ProtectedUserRoute>
-<Contact/>
-</ProtectedUserRoute>
+ <Route 
+ path="/Contact"
+  element ={
+  <ProtectedUserRoute>
+  <Contact/>
+  </ProtectedUserRoute>
 
-}
-/>
-<Route
-path="/PopularBooks"
-element={
-<ProtectedUserRoute>
+   }
+   />
+ <Route
+ path="/PopularBooks"
+  element={
+  <ProtectedUserRoute>
   <PopularBooks />
-</ProtectedUserRoute >
+ </ProtectedUserRoute >
 }
 />
         <Route

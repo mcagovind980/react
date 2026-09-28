@@ -1,11 +1,10 @@
 
-
 import "../css/AdminBooks.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function AdminBooks() {
-  const [books, setBooks] = useState([]);
+ function AdminBooks() {
+ const [books, setBooks] = useState([]);
 
   const [formData, setFormData] = useState({
     title: "",
@@ -21,9 +20,7 @@ function AdminBooks() {
 
   const navigate = useNavigate();
 
-  // =========================
-  // GET ALL BOOKS
-  // =========================
+
   const getBooks = async () => {
     try {
       const response = await fetch(
@@ -44,13 +41,11 @@ function AdminBooks() {
     }
   };
 
-  // =========================
-  // PAGE LOAD
-  // =========================
+
   useEffect(() => {
     const token = localStorage.getItem("adminToken");
 
-    // Token nahi hai
+
     if (!token) {
       navigate("/admin/login");
       return;
@@ -59,9 +54,7 @@ function AdminBooks() {
     getBooks();
   }, [navigate]);
 
-  // =========================
-  // INPUT CHANGE
-  // =========================
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -69,9 +62,7 @@ function AdminBooks() {
     });
   };
 
-  // =========================
-  // ADD / UPDATE BOOK
-  // =========================
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -80,14 +71,15 @@ function AdminBooks() {
 
     const token = localStorage.getItem("adminToken");
 
-    if (!token) {
+    if (!token) 
+      {
       navigate("/admin/login");
       return;
-    }
+     }
 
-    try {
-      const url = editId
-        ? `http://localhost:5000/api/books/${editId}`
+      try {
+       const url = editId
+       ? `http://localhost:5000/api/books/${editId}`
         : "http://localhost:5000/api/books";
 
       const method = editId ? "PUT" : "POST";
@@ -98,7 +90,7 @@ function AdminBooks() {
         headers: {
           "Content-Type": "application/json",
 
-          // JWT Token
+
           Authorization: `Bearer ${token}`
         },
 
@@ -127,7 +119,7 @@ function AdminBooks() {
         setMessage("Book successfully added ✅");
       }
 
-      // Form reset
+
       setFormData({
         title: "",
         image: "",
@@ -136,7 +128,7 @@ function AdminBooks() {
 
       setEditId(null);
 
-      // Books reload
+
       getBooks();
 
     } catch (error) {
@@ -148,9 +140,7 @@ function AdminBooks() {
     }
   };
 
-  // =========================
-  // EDIT BOOK
-  // =========================
+
   const handleEdit = (book) => {
     setEditId(book._id);
 
@@ -163,9 +153,7 @@ function AdminBooks() {
     setMessage("");
   };
 
-  // =========================
-  // DELETE BOOK
-  // =========================
+
   const handleDelete = async (id) => {
     const confirmDelete = window.confirm(
       "Kya aap ye book delete karna chahte hain?"
@@ -215,6 +203,7 @@ function AdminBooks() {
       setMessage("Book successfully deleted ✅");
 
       // Books reload
+
       getBooks();
 
     } catch (error) {
@@ -224,9 +213,7 @@ function AdminBooks() {
     }
   };
 
-  // =========================
-  // CANCEL EDIT
-  // =========================
+
   const handleCancel = () => {
     setEditId(null);
 
@@ -247,29 +234,22 @@ function AdminBooks() {
 
     navigate("/admin/login");
   };
-
   return (
     <div className="admin-books">
 
       <h1>Admin Book Panel</h1>
 
-      {/* Logout */}
       <button onClick={handleLogout}>
         Logout
       </button>
 
       <hr />
-
-      {/* Message */}
       {message && (
         <p>
           {message}
         </p>
       )}
 
-      {/* =========================
-          ADD / UPDATE FORM
-      ========================= */}
 
       <form onSubmit={handleSubmit}>
 
@@ -312,7 +292,7 @@ function AdminBooks() {
             : "Add Book"}
         </button>
 
-        {/* Cancel Edit */}
+
         {editId && (
           <button
             type="button"
@@ -326,9 +306,6 @@ function AdminBooks() {
 
       <hr />
 
-      {/* =========================
-          BOOK LIST
-      ========================= */}
 
       <h2>All Books</h2>
 
