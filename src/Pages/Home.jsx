@@ -1,4 +1,4 @@
-import {Link} from "rect"
+import { Link } from "react-router-dom";
 import books from "../Data/Home1"
 import "../css/App.css";
 import Loader from "../Component/Loader";

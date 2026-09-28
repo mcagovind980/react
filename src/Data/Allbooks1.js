@@ -3,140 +3,140 @@ const books=
   {
     id:1,
     title:"Mind_to_Matter_-_Dawson_Church11",
-    image:"/public/Images/AboutMind/OIP1.jpg",
+    image:"/Images/AboutMind/OIP1.jpg",
     viewLink:"https://drive.google.com/file/d/1ITQIIgJJlH7OtJylmB_mNqKg1aP3IlOF/view?usp=drive_link"
     }
    ,
     {
     id:2,
     title:"Master_Your_Mind",
-    image:"/public/Images/AboutMind/download.jpg",
+    image:"/Images/AboutMind/download.jpg",
     viewLink:"https://drive.google.com/file/d/1nfNIz9FA_85Rt8z6OoOnLAvjnm7qydS6/view?usp=drive_link"
     }
    ,
     {
     id:3,
     title:"Real_Life_Mindfulness_Becca",
-    image:"/public/Images/AboutMind/OIP.jpg",
+    image:"/Images/AboutMind/OIP.jpg",
     viewLink:"https://drive.google.com/file/d/1UZRq2pa3__XO2mj0ysiSVabjZ0T43ytz/view?usp=drive_link"
     }
    ,
     {
     id:4,
     title:"Teaching_That_Changes_Lives_12_Mindset_Tool",
-    image:"/public/Images/AboutMind/OIP2.jpg",
+    image:"/Images/AboutMind/OIP2.jpg",
     viewLink:"https://drive.google.com/file/d/1wzS8s2nV9yA44sV9rOgHaGtEYYjbjzcr/view?usp=drive_link"
     }
    ,
     {
     id:5,
     title:" Mind control The secret weapon utilised",
-    image:"/public/Images/AboutMind/download2.jpg",
+    image:"/Images/AboutMind/download2.jpg",
     viewLink:"https://drive.google.com/file/d/1fFNNpg6VS8xi9OOefUR3um2ZW2C12KoF/view?usp=drive_link"
     }
    ,
     {
     id:6,
     title:"Mindful_Steps_to_Self_Esteem_Everyday_Practices_for_Cultivating",
-    image:"/public/Images/AboutMind/OIP3.jpg",
+    image:"/Images/AboutMind/OIP3.jpg",
     viewLink:"https://drive.google.com/file/d/1PKU6ogC_pH4SVWgarCy40Vw3BIXYM-Wr/view?usp=drive_link"
     }
    ,
     {
     id:7,
     title:"A_mind_for_numbers,_how_to_excel_at_math",
-    image:"/public/Images/AboutMind/OIP4.jpg",
+    image:"/Images/AboutMind/OIP4.jpg",
     viewLink:"https://drive.google.com/file/d/1x7t69Lq92bjgfvNjXcPCLA3LbrUpZsHj/view?usp=drive_link"
     
 },
     {
     id:8,
     title:"Battlefield of the Mind book",
-    image:"/public/Images/AboutMind/download3.jpg",
+    image:"/Images/AboutMind/download3.jpg",
     viewLink:"https://drive.google.com/file/d/1QHjnTxs_BrHd9anGzRJS-KxwFCB8uP8l/view?usp=drive_link"
     }
 ,
     { 
     id:9,
     title:"Be Here Now_ Open Your Mind to Spirituality ",
-    image:"/public/Images/AboutMind/download4.jpg",
+    image:"/Images/AboutMind/download4.jpg",
     viewLink:"https://drive.google.com/file/d/1Mx1p8ye1R9cXeIQiNXMTiak0MfWCasRN/view?usp=drive_link"
     }
    ,
     {
     id:10,
     title:"Body_Language_and_Mind_Hack_Nonverbal",
-    image:"/public/Images/AboutMind/download5.jpg",
+    image:"/Images/AboutMind/download5.jpg",
     viewLink:"https://drive.google.com/file/d/1uQicZ0DVtgfK2qtCw5aY3ofU9574URHe/view?usp=drive_link"
     },
     
   {
     id: 1,
     title: "Alone Together ",
-    image:"/public/Images/Alone/71HJ49yivqL.jpg",
+    image:"/Images/Alone/71HJ49yivqL.jpg",
     
     viewLink: "https://drive.google.com/file/d/1aG-l9x7sFrL9u1qxE_miZ0gBIS_7czJw/view?usp=drive_link",
   }
 ,  {
     id: 2,
     title: "Alone with the Alone ",
-    image:"/public/Images/Alone/OIP3.jpg",
+    image:"/Images/Alone/OIP3.jpg",
     
     viewLink: "https://drive.google.com/file/d/1kiRsWSXr4-5bbSSm5r8Gm2PgegPt_T-o/view?usp=drive_link",
   }
 ,  {
     id: 3,
     title: "Every Man Dies Alone [Alone in Berlin]",
-    image:"/public/Images/Alone/download.jpg",
+    image:"/Images/Alone/download.jpg",
     
     viewLink: "https://drive.google.com/file/d/1fyQVHZi1YukBrl0wQQYoIOtS7jllTJvI/view?usp=drive_link",
   }
 ,  {
     id: 4,
     title: "Go It Alone!_ The Secret to Building Your Business",
-    image:"/public/Images/Alone/download1.jpg",
+    image:"/Images/Alone/download1.jpg",
     
     viewLink: "https://drive.google.com/file/d/1MdnaaM6tg-clJfyIo9armlRvnf3pMXdx/view?usp=drive_link",
   }
 ,  {
     id: 5,
     title: "how to be alone book",
-    image:"/public/Images/Alone/OIP4.jpg",
+    image:"/Images/Alone/OIP4.jpg",
     
     viewLink: "https://drive.google.com/file/d/1NUy_rPnm5TZpQ946ZJlWMqBCtrxyICkc/view?usp=drive_link",
   }
 ,  {
     id: 6,
     title: "How To Be Happy_ Alone_ The Ultimate Guide",
-    image:"/public/Images/Alone/download3.jpg",
+    image:"/Images/Alone/download3.jpg",
     
     viewLink: "https://drive.google.com/file/d/1Zt_R-FwKBss3yP_PfvLYbzWSzVObmtUT/view?usp=drive_link",
   }
 ,  {
     id: 7,
     title: "Living Alone and Subsequent Living Arrangement",
-    image:"/public/Images/Alone/download5.jpg",
+    image:"/Images/Alone/download5.jpg",
     
     viewLink: "https://drive.google.com/file/d/1ltoMtRzogI4JwP1qiPr4H7xN_phkCi62/view?usp=drive_link",
   }
 ,  {
     id: 8,
     title: "Money Changes Everything_ Get Rich, Live Rich, Die Rich",
-    image:"/public/Images/Alone/OIP5.jpg",
+    image:"/Images/Alone/OIP5.jpg",
     
     viewLink: "https://drive.google.com/file/d/1GQH73v_w8h54Jo9912xmoP-m_4ZKG5zs/view?usp=drive_link",
   }
 ,  {
     id: 9,
     title: "The Knowledge Illusion_ Why We Never Think Alone",
-    image:"/public/Images/Alone/download11.jpg",
+    image:"/Images/Alone/download11.jpg",
     
     viewLink: "https://drive.google.com/file/d/1xm116H11bG73RqlsKjl_Ahy3K7sXFaN7/view?usp=drive_link",
   }
 ,  {
     id: 10,
     title: "The Winner Stands Alone ",
-    image:"/public/Images/Alone/download7.jpg",
+    image:"/Images/Alone/download7.jpg",
     
     viewLink: "https://drive.google.com/file/d/1jjT247oK-KGjgi4bdQ9MR89KF0eySPLU/view?usp=drive_link",
   }
@@ -144,14 +144,14 @@ const books=
   {
         id:1,
         title:"सकारात्मक_सोच_की_शक्ति_नॉर्मन_व्हिन्सेंट",
-        image:"/public/Images/Baiography/sakaratmaksoachkishakti-F.webp",
+        image:"/Images/Baiography/sakaratmaksoachkishakti-F.webp",
         viewLink:"https://drive.google.com/file/d/10wYzO38Tveq3mg1TZ3qzyR1szt2RUz4V/view?usp=drive_link"
     },
     
     {
         id:2,
         title:"राम मनोहर लोहिया का जीवन परिचय ",
-        image:"/public/Images/Baiography/81Sy1ERhdsL._SL1500_.jpg",
+        image:"/Images/Baiography/81Sy1ERhdsL._SL1500_.jpg",
         viewLink:"https://drive.google.com/file/d/1RbAj0snfQXa0DXQu294nO9JKPnJLRj6W/view?usp=drive_link"
     }
 ,
@@ -464,7 +464,7 @@ const books=
     {
         id:8,
         title:"vyavharik-vmanoigyaan",
-        image:"/public/Images/HindiMotivational/OIP2.jpg",
+        image:"/Images/HindiMotivational/OIP2.jpg",
         viewLink:"https://drive.google.com/file/d/18qRlmfZDeH2tM4YOR8LB4J1kNnkcX5y3/view?usp=drive_link"
     }
 
@@ -472,14 +472,14 @@ const books=
     {
         id:9,
         title:"Accha Bolne Ki Kala",
-        image:"/public/Images/HindiMotivational/OIP4.jpg",
+        image:"/HindiMotivational/OIP4.jpg",
         viewLink:"https://drive.google.com/file/d/1R7NSFGCRB3WsL21zWGhGnn89faCeKyeS/view?usp=drive_link"
     }
     ,
     {
         id:10,
         title:"Amazon की सफलता ",
-        image:"/public/Images/HindiMotivational/download4.jpg",
+        image:"/Images/HindiMotivational/download4.jpg",
         viewLink:"https://drive.google.com/file/d/1EkYRD6GQNhwgiJLcvB1b-gg27z37jTE7/view?usp=drive_link"
     }
 
