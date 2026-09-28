@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
 
+// Admin Protected Route
 function ProtectedRoute({ children }) {
   const token = localStorage.getItem("adminToken");
 
@@ -10,19 +11,15 @@ function ProtectedRoute({ children }) {
   return children;
 }
 
-export default ProtectedRoute;
+// User Protected Route
+function ProtectedUserRoute({ children }) {
+  const token = localStorage.getItem("userToken");
 
+  if (!token) {
+    return <Navigate to="/login" replace />;
+  }
 
-// import { Navigate } from "react-router-dom";
+  return children;
+}
 
-// function ProtectedUserRoute({ children }) {
-//   const token = localStorage.getItem("userToken");
-
-//   if (!token) {
-//     return <Navigate to="/login" replace />;
-//   }
-
-//   return children;
-// }
-
-// export default ProtectedUserRoute;
+export { ProtectedRoute, ProtectedUserRoute };
