@@ -4,7 +4,7 @@ const books = [
   {
     id: 1,
     title: "Alone Together ",
-    image:"/public/Images/Alone/71HJ49yivqL.jpg",
+    image:"/Images/Alone/71HJ49yivqL.jpg",
     
     viewLink: "https://drive.google.com/file/d/1aG-l9x7sFrL9u1qxE_miZ0gBIS_7czJw/view?usp=drive_link",
   }
