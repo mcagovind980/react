@@ -239,13 +239,15 @@
 const express = require("express");
 const cors = require("cors");
 
+require("dotenv").config();
+
 const bookRoutes = require("./routes/bookRoutes.js");
 const adminRoutes = require("./routes/adminRoutes.js");
 const connectDB = require("./config/db.js");
 const userRoutes = require("./routes/userRoutes.js");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;;
 
 connectDB();
 
