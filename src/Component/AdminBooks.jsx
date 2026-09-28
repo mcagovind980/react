@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 // import { useEffect, useState } from "react";
-//dthdfhgd
 
 // function AdminBooks() {
 //   const [books, setBooks] = useState([]);
@@ -183,7 +180,6 @@
 // export default AdminBooks;
 
 
->>>>>>> 0e88af002906e10acc968f17a44d4bffa0aec9ce
 
 
 import "../css/AdminBooks.css";
