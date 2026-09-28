@@ -5,12 +5,10 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      {/* Logo */}
       <div className="logo">
         Motivational Ebook 
       </div>
 
-      {/* Navigation */}
       <div className="nav-links">
 
         <NavLink to="/" end>
@@ -30,7 +28,6 @@ function Navbar() {
         </NavLink>
 
 
-        {/* ================= LOGIN ================= */}
 
         <div className="nav-dropdown">
 
@@ -54,7 +51,6 @@ function Navbar() {
         </div>
 
 
-        {/* ================= SIGN UP ================= */}
 
         <div className="nav-dropdown">
 

@@ -40,7 +40,7 @@ function AdminBooks() {
 
     } catch (error) {
       console.log("Get Books Error:", error);
-      setMessage("Books load nahi ho pa rahi hain");
+      setMessage("Books is not able to load");
     }
   };
 
