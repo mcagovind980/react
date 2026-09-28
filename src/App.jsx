@@ -37,8 +37,7 @@ import AdminRegister from "./Component/AdminRegister";
 import AdminLogin from "./Component/AdminLogin";
 
 // Protection
-import ProtectedRoute from "./Component/ProtectedRoute";
-import ProtectedUserRoute from "./Component/ProtectedUserRoute";
+
 import {
   ProtectedRoute,
   ProtectedUserRoute
