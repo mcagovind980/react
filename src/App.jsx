@@ -132,7 +132,7 @@ function App() {
 
 
         <Route
-          path="/Alone"
+          path="Alone"
           element={
             <ProtectedUserRoute>
               <Alone />

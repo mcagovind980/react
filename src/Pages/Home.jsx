@@ -15,9 +15,9 @@ function Brain()
 </img>
 <h3>{book.title}</h3>
 
-<a href={book.path} >
-    View Pdf
-</a>
+<Link to={`/${book.path}`}>
+  View Pdf
+</Link>
     </div>
 )) }
 </div>
