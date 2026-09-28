@@ -1,3 +1,4 @@
+import {Link} from "rect"
 import books from "../Data/Home1"
 import "../css/App.css";
 import Loader from "../Component/Loader";
