@@ -5,7 +5,7 @@ const books=[
 id:1,
 title:"Alone",
 image:"/Images/AboutMind/download.jpg",
-path:"Alone"
+path:"/Alone"
     }
     ,
     {
